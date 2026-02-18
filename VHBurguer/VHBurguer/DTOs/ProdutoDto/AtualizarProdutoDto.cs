@@ -1,6 +1,6 @@
 ﻿namespace VHBurguer.DTOs.ProdutoDto
 {
-    public class CriarProdutoDto
+    public class AtualizarProdutoDto
     {
         public string Nome { get; set; } = null!;
 
@@ -12,6 +12,7 @@
         // Imagem via multipart/form-data, ideal para upload de arquivo
 
         public List<int> CategoriaIds { get; set; } = new();
-         
-        }
+        public bool? StatusProduto { get; set; }
+    }
 }
+
