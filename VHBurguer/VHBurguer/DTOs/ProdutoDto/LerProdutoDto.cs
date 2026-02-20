@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using VHBurguer.Domains;
+﻿using VHBurguer.Domains;
 
 namespace VHBurguer.DTOs.ProdutoDto
 {
@@ -15,18 +14,13 @@ namespace VHBurguer.DTOs.ProdutoDto
 
         public bool? StatusProduto { get; set; }
 
-
-        //Categorias
-        public List<int> CategoriaIds { get; set; } = new();
-
-        public List<string> Categoria { get; set; } = new();
-
-        // Usuario que cadastrou
+        //categorias
+        public List<int> CategoriasIds { get; set; } = new();
+        public List<string> Categorias { get; set; } = new();
 
         public int? UsuarioID { get; set; }
         public string? UsuarioNome { get; set; }
-
-        public string? UsuarioEmail { get; set; }
+        public string? UsuarioEmail { get; set; }  
 
     }
 }

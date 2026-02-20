@@ -1,4 +1,4 @@
-﻿namespace VHBurguer.Applications.Conversoes
+﻿namespace VHBurguer.Applications.Conversions
 {
     public class ImagemParaBytes
     {
@@ -6,7 +6,8 @@
         {
             using var ms = new MemoryStream();
             imagem.CopyTo(ms);
-            return ms.ToArray();
-        }   
+            return ms.ToArray();    
+        }
+
     }
 }
